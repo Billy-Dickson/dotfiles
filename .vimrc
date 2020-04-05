@@ -272,20 +272,25 @@ augroup END
 " Reselect last-pasted text
 nnoremap gp `[v`]
 
+
+" As I don't have the PATHOGEN PLUGINS installed I'm going to 
+" comment this part out. Currently getting an error message
+" when I'm stating vim.
+
 """"""""""""""""""""
 " PATHOGEN PLUGINS "
 """"""""""""""""""""
 
 " START NERDTree if no files are specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Close NERDTree if it's the only window left open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " https://github.com/nathanaelkane/vim-indent-guides/issues/20
-let g:indent_guides_exclude_filetypes = ['nerdtree']
-" END NERDTree
+"let g:indent_guides_exclude_filetypes = ['nerdtree']
+"" END NERDTree
 
 " START Airline
 let g:airline#extensions#tabline#enabled = 1
