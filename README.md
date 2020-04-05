@@ -11,10 +11,10 @@ cd dotfiles
 ./install.sh
 ```
 
-### Some light reading for me, as I not used tmux or vim in a while.
-```
-https://tmuxcheatsheet.com/
-https://devhints.io/vim
+### Some light reading for me.
+
+[Tmux Keys](https://tmuxcheatsheet.com/).
+[Vim Keys](https://devhints.io/vim)
 
 # Uninstallation
 
