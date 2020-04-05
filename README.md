@@ -13,8 +13,8 @@ cd dotfiles
 
 ### Some light reading for me.
 
-[Tmux Keys](https://tmuxcheatsheet.com/).
-[Vim Keys](https://devhints.io/vim)
+[Tmux Keys](https://tmuxcheatsheet.com/)(U+000A)
+[Vim Keys](https://devhints.io/vim)(U+000A)
 
 # Uninstallation
 
