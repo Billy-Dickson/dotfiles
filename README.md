@@ -14,6 +14,7 @@ cd dotfiles
 ### Some light reading for me.
 
 [Tmux Key Binding](https://tmuxcheatsheet.com/)
+
 [Vim Key Binding](https://devhints.io/vim)
 
 # Uninstallation
