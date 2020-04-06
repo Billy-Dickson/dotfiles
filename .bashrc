@@ -8,6 +8,7 @@ case $- in
       *) return;;
 esac
 
+export QUOTING_STYLE=literal
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin
 
 # don't put duplicate lines or lines starting with space in the history.
