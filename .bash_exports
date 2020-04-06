@@ -17,7 +17,4 @@ export LESSOPEN='|~/.lessfilter %s'
 # export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # export EDITOR=/usr/bin/vim
-# Change to nano until I have time to learn vim B.Dickson 04.04.20
-export EDITOR=/bin/nano
-
 

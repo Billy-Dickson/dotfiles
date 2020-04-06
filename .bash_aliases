@@ -1,7 +1,5 @@
-# Removed some of the alias's, I might put them back when I have the time to 
-# Investigate them further.
-#alias gti='git'
-#alias tmux='tmux -2'
+alias gti='git'
+alias tmux='tmux -2'
 alias less='less -R'
 alias diff='colordiff'
 #alias dc='cd'
