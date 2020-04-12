@@ -130,3 +130,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Enabling time and date on the history command B.Dickson 12.04.20
+export HISTTIMEFORMAT='%m-%d %T ->  '
