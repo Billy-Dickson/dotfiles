@@ -13,7 +13,7 @@ cd dotfiles
 
 ### Some light reading for me.
 
-[Tmux Key Binding](https://gist.github.com/MohamedAlaa/2961058#misc)
+[Tmux Cheat Sheet](https://tmuxcheatsheet.com/)
 
 [Vim Key Binding](https://devhints.io/vim)
 
