@@ -34,4 +34,5 @@ cd ~/dotfiles
 ## References and helpfull links
 [Tmux Cheat Sheet](https://tmuxcheatsheet.com/)  
 [Vim Key Binding](https://devhints.io/vim)  
-[Bash scripting Cheatsheet](https://devints.io/vim)  
+[Bash scripting Cheat sheet](https://devints.io/vim)
+[Emoji Cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet#table-of-contents)  
