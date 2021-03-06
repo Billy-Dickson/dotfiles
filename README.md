@@ -11,28 +11,28 @@ It scratches an itch. :smile:
 ## Installation
 
 ### Download and change folder
-```
+```bash
 cd ~
 git clone https://github.com/Billy-Dickson/dotfiles.git
 cd dotfiles
 ```
 ### Run installer
-```
+```bash
 ./install.sh
 ```
 ## Removal
 
 ### Change to dotfiles folder
-```
+```bash
 cd ~/dotfiles
 ```
 ### Run uninstaller
-```
+```bash
 ./uninstall.sh
 ```
 
 ## References and helpfull links
 [Tmux Cheat Sheet](https://tmuxcheatsheet.com/)  
-[Vim Key Binding](https://devhints.io/vim)  
-[Bash scripting Cheat sheet](https://devints.io/vim)  
+[Vim Cheat Sheet](https://devhints.io/vim)  
+[Bash scripting Cheat sheet](https://devhints.io/bash)  
 [Emoji Cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet#table-of-contents)  
