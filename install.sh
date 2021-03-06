@@ -15,28 +15,44 @@ for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     ln -s $PWD/$file ~/$file
 done
 
+# Optionally install Vim if it's missing.
 if hash vim 2>/dev/null; then
 	printf "Vim installed\n"
 else
     while true; do
-    read -p "Would you like to install vim -> " yn
+    read -p "Would you like to install Vim -> " yn
         case $yn in
             [Yy]* ) sudo apt -y install vim vim-scripts; printf "vim and vim-scripts installed\n\n"; break;;
             [Nn]* ) break;;
             * ) echo "Please answer yes or no.";;
        esac
     done
-fi
+  fi
 
+# Optionally install Tmux if it's missing.
 if hash tmux 2>/dev/null; then
     printf "Tmux installed\n"
 else
     while true; do
-    read -p "Would you like to install tmux -> " yn
+    read -p "Would you like to install Tmux -> " yn
         case $yn in
             [Yy]* ) sudo apt -y install tmux; printf "Tmux installed\n\n"; break;;
             [Nn]* ) exit;;
             * ) echo "Please answer yes or no.";;
         esac
     done
-fi
+  fi
+
+# Optionally install Neofetch if it's missing.
+if hash neofetch 2>/dev/null; then
+  printf "Neofetch installed\n"
+else
+    while true; do
+      read -p "Would you like to install Neofetch -> " yn
+      case $yn in
+        [Yy]* ) sudo apt -y install neofetch; printf "Neofetch installed\n\n"; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please anser yes or no.";;
+      esac
+    done
+  fi
