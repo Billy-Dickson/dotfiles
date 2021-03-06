@@ -1,4 +1,6 @@
 # Installation
+![Terminal Screenshot](assets/Screenshot.png)
+
 ### Download and change folder
 ```
 cd ~
