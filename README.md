@@ -20,7 +20,7 @@ cd dotfiles
 ```
 ./install.sh
 ```
-### Removal
+## Removal
 
 ### Change to dotfiles folder
 ```
@@ -32,6 +32,6 @@ cd ~/dotfiles
 ```
 
 ## References and helpfull links
-[Tmux Cheat Sheet](https://tmuxcheatsheet.com/)
-[Vim Key Binding](https://devhints.io/vim)
-[Bash scripting Cheatsheet](https://devints.io/vim)
+[Tmux Cheat Sheet](https://tmuxcheatsheet.com/)  
+[Vim Key Binding](https://devhints.io/vim)  
+[Bash scripting Cheatsheet](https://devints.io/vim)  
