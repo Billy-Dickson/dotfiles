@@ -36,3 +36,4 @@ cd ~/dotfiles
 [Vim Cheat Sheet](https://devhints.io/vim)  
 [Bash scripting Cheat sheet](https://devhints.io/bash)  
 [Emoji Cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet#table-of-contents)  
+[A list of tmux plugins.](https://github.com/tmux-plugins/list)  
