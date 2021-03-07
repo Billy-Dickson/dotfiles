@@ -10,6 +10,11 @@ It scratches an itch. :smile:
 
 ## Installation
 
+You will need to install git first before downloading the dotfiles, to install git, type the following at the prompt.
+
+```bash
+sudo apt install git
+```
 ### Download and change folder
 ```bash
 cd ~
