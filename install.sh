@@ -5,14 +5,23 @@
 # Check to see if vim is installed and if not, ask if the user wished to install it
 # install vim-scripts while installing vim (value added).
 
-# https://www.shellhacks.com/yes-no-bash-script-prompt-confirmation/
 # Billy Dickson 4/03/21
+# https://www.shellhacks.com/yes-no-bash-script-prompt-confirmation/
+#
+# Billy Dickson 08/03/21
+# Test to see if the symbolic link to .bashrc is there, if it is, then the
+# install program has already been run, suggest running uninstall.sh first then quit.
+#
 
+if [ -L $HOME'/.bashrc' ]; then
+  printf "\nThe dotfiles have already been installed. Try running uninstall program first.\n\n"
+  printf "./uninstall.sh\n\n"
+else
 for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
-    if [ -e ~/$file ]; then
-        mv -f ~/$file{,.dtbak}
-    fi
-    ln -s $PWD/$file ~/$file
+  if [ -e ~/$file ]; then
+      mv -f ~/$file{,.dtbak}
+  fi
+  ln -s $PWD/$file ~/$file
 done
 
 # Optionally install Vim if it's missing.
@@ -56,3 +65,4 @@ else
       esac
     done
   fi
+fi
