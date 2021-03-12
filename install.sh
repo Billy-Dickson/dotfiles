@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Find all dot files then if the original file exists, create a backup
+# Find all dot files then, if the original file exists, create a backup
 # Once backed up to {file}.dtbak symlink the new dotfile in place
 # Check to see if vim is installed and if not, ask if the user wished to install it
 # install vim-scripts while installing vim (value added).
