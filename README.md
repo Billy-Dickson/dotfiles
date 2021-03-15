@@ -6,6 +6,8 @@ This is fork of a mature project that extends the bash setup on my Laptops and a
 
 It scratches an itch. :smile:
 
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+
 ## Table of Contents
  - [Installation](#installation)
    - [Download and change folder](#download-and-change-folder)
