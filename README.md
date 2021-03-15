@@ -6,6 +6,15 @@ This is fork of a mature project that extends the bash setup on my Laptops and a
 
 It scratches an itch. :smile:
 
+## Table of Contents
+ - [Installation](#installation)
+   - [Download and change folder](#download-and-change-folder)
+   - [Run installer](#run-installer)
+ - [Removal](#removal)
+   - [Change to dotfiles folder](#change-to-dotfiles-folder)
+   - [Run uninstaller](#run-uninstaller)
+ - [References and helpfull links](#references-and-helpfull-links)
+
 ![Terminal Screenshot](assets/Screenshot.png)
 
 ## Installation
