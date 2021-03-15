@@ -12,27 +12,29 @@ It scratches an itch. :smile:
 
 You will need to install git first before downloading the dotfiles, to install git, type the following at the prompt.
 
-```bash
+```shell scripting
 sudo apt install git
 ```
+
 ### Download and change folder
-```bash
+```shell scripting
 cd ~
 git clone https://github.com/Billy-Dickson/dotfiles.git
 cd dotfiles
 ```
 ### Run installer
-```bash
+```shell scripting
 ./install.sh
 ```
 ## Removal
 
 ### Change to dotfiles folder
-```bash
+```shell scripting
 cd ~/dotfiles
 ```
+
 ### Run uninstaller
-```bash
+```shell scripting
 ./uninstall.sh
 ```
 
@@ -42,4 +44,5 @@ cd ~/dotfiles
 [Bash scripting Cheat sheet](https://devhints.io/bash)  
 [Bash handbook](https://github.com/denysdovhan/bash-handbook)  
 [Emoji Cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet#table-of-contents)  
-[A list of tmux plugins.](https://github.com/tmux-plugins/list)  
+[A list of tmux plugins.](https://github.com/tmux-plugins/list)
+[A list of programming languages known to github](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)   
