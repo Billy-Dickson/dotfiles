@@ -61,7 +61,7 @@ else
       case $yn in
         [Yy]* ) sudo apt -y install neofetch; printf "Neofetch installed\n\n"; break;;
         [Nn]* ) exit;;
-        * ) echo "Please anser yes or no.";;
+        * ) echo "Please answer yes or no.";;
       esac
     done
   fi
