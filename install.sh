@@ -10,7 +10,8 @@
 #
 # Billy Dickson 08/03/21
 # Test to see if the symbolic link to .bashrc is there, if it is, then the
-# install program has already been run, suggest running uninstall.sh first then quit.
+# install program has already been run, suggest running uninstall.sh first
+# then quit.
 #
 
 if [ -L $HOME'/.bashrc' ]; then
@@ -31,12 +32,13 @@ else
     while true; do
     read -p "Would you like to install Vim -> " yn
         case $yn in
-            [Yy]* ) sudo apt -y install vim vim-scripts; printf "vim and vim-scripts installed\n\n"; break;;
+            [Yy]* ) sudo apt -y install vim vim-scripts;
+            printf "vim and vim-scripts installed\n\n"; break;;
             [Nn]* ) break;;
             * ) echo "Please answer yes or no.";;
        esac
     done
-  fi
+fi
 
 # Optionally install Tmux if it's missing.
 if hash tmux 2>/dev/null; then
@@ -50,7 +52,7 @@ else
             * ) echo "Please answer yes or no.";;
         esac
     done
-  fi
+fi
 
 # Optionally install Neofetch if it's missing.
 if hash neofetch 2>/dev/null; then
@@ -64,5 +66,24 @@ else
         * ) echo "Please answer yes or no.";;
       esac
     done
-  fi
+fi
+
+# Billy Dickson 12/03/2022
+# Optionally install Jekyll if its missing based on the instructions provided on
+# this website https://jekyllrb.com/docs/installation/ubuntu/
+
+if hash jekyll 2>/dev/null; then
+  printf "Jekyll installed\n"
+else
+     while true; do
+	      read -p "Would you like to install Jekyll -> " yn
+	      case $yn in
+          [Yy]* ) sudo apt -y install ruby-full build-essential zlib1g-dev;
+          printf "Jekyll installed\n\n"; break;;
+          gem install jekyll bundler;
+          printf "\nInstalled Jekyll and Bundler\n\n"; break;;
+          [Nn]* ) exit;;
+          * ) echo "Please answer yes or no.";;
+        esac
+     done
 fi

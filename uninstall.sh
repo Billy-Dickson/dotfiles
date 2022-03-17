@@ -46,7 +46,7 @@ if hash neofetch 2>/dev/null; then
       case $yn in
         [Yy]* ) sudo apt -y remove neofetch; printf "Neofetch removed\n\n"; break;;
         [Nn]* ) exit;;
-        * ) echo "Please anser yes or no.";;
+        * ) echo "Please answer yes or no.";;
       esac
     done
 fi

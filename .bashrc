@@ -131,6 +131,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
 # Enabling time and date on the history command B.Dickson 12.04.20
 export HISTTIMEFORMAT='%m-%d %T ->  '
