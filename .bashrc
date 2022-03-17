@@ -120,7 +120,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# enable programmable completion features (you don't need to enable
+# Enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
@@ -133,3 +133,12 @@ fi
 
 # Enabling time and date on the history command B.Dickson 12.04.20
 export HISTTIMEFORMAT='%m-%d %T ->  '
+
+# Install Ruby Gems to ~/gems
+# Added to support ruby gems such as jakyll and bundler and other ruby on rails
+# gems that might be needed later to support jekyll
+# B.Dickson 17/03/22
+# https://jekyllrb.com/docs/installation/ubuntu/
+
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
