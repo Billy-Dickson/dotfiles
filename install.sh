@@ -70,7 +70,8 @@ fi
 
 # Billy Dickson 12/03/2022
 # Optionally install Jekyll if its missing based on the instructions provided on
-# this website https://jekyllrb.com/docs/installation/ubuntu/
+# the https://jekyllrb.com/docs/installation/ubuntu/
+#
 
 if hash jekyll 2>/dev/null; then
   printf "Jekyll installed\n"
