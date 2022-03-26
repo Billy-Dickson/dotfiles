@@ -68,23 +68,28 @@ else
     done
 fi
 
-# Billy Dickson 12/03/2022
-# Optionally install Jekyll if its missing based on the instructions provided on
-# the https://jekyllrb.com/docs/installation/ubuntu/
+# Optionally install Jekyll if its missing
 #
-
-if hash jekyll 2>/dev/null; then
+# Check to see if the applications have been installed and also check
+# to see if the gem files have been installed, if they aren't then ask the
+# user If they would like to install the applications and the gems for
+# running jekyll
+#
+if dpkg-query -s zlib1g-dev 1>/dev/null && dpkg-query -s ruby-full 1>/dev/null \
+  && dpkg-query -s  build-essential 1>/dev/null && gem spec bundler 1>/dev/null 2>&1 \
+  && gem spec jekyll 1>/dev/null 2>&1;
+then
   printf "Jekyll installed\n"
 else
      while true; do
 	      read -p "Would you like to install Jekyll -> " yn
 	      case $yn in
-          [Yy]* ) sudo apt -y install ruby-full build-essential zlib1g-dev;
-          printf "Jekyll installed\n\n"; break;;
-          gem install jekyll bundler;
-          printf "\nInstalled Jekyll and Bundler\n\n"; break;;
-          [Nn]* ) exit;;
+           [Yy]* ) sudo apt -y install ruby-full build-essential zlib1g-dev; \
+           printf "\nRuby, build essential and zliblg-dev Installed\n\n" \
+	         gem install jekyll bundler; \
+           printf "\nGems jekyll and bundler Installed\n\n"; break;;
+           [Nn]* ) exit;;
           * ) echo "Please answer yes or no.";;
         esac
-     done
+      done
 fi
