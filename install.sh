@@ -92,4 +92,5 @@ else
           * ) echo "Please answer yes or no.";;
         esac
       done
+    fi
 fi
