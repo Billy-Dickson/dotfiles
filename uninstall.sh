@@ -44,7 +44,7 @@ if hash neofetch 2>/dev/null; then
     while true; do
       read -p "Would you like to uninstall Neofetch -> " yn
       case $yn in
-        [Yy]* ) sudo apt -y remove neofetch; printf "Neofetch removed\n\n"; break;;
+        [Yy]* ) sudo apt -y remove neofetch; printf "\nNeofetch removed\n\n"; break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
       esac
