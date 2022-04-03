@@ -13,7 +13,10 @@
 # install program has already been run, suggest running uninstall.sh first
 # then quit.
 #
-
+# Check to see if a ruby gem is installed, if not then install.
+#  https://serverfault.com/questions/391621/checking-if-a-ruby-gem-is-installed-from-bash-script
+#
+#
 if [ -L $HOME'/.bashrc' ]; then
   printf "\nThe dotfiles have already been installed. Try running uninstall program first.\n\n"
   printf "./uninstall.sh\n\n"
@@ -75,7 +78,7 @@ fi
 # user If they would like to install the applications and the gems for
 # running jekyll
 #
-if dpkg-query -s zlib1g-dev 1>/dev/null && dpkg-query -s ruby-full 1>/dev/null 2>&1 \
+if dpkg-query -s zlib1g-dev 1>/dev/null && dpkg-query -s ruby-full 1>/dev/null \
   && dpkg-query -s  build-essential 1>/dev/null && gem spec bundler 1>/dev/null 2>&1 \
   && gem spec jekyll 1>/dev/null 2>&1;
 then
@@ -92,5 +95,5 @@ else
           * ) echo "Please answer yes or no.";;
         esac
       done
-    fi
+  fi
 fi
