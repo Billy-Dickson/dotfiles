@@ -75,7 +75,7 @@ fi
 # user If they would like to install the applications and the gems for
 # running jekyll
 #
-if dpkg-query -s zlib1g-dev 1>/dev/null && dpkg-query -s ruby-full 1>/dev/null \
+if dpkg-query -s zlib1g-dev 1>/dev/null && dpkg-query -s ruby-full 1>/dev/null 2>&1 \
   && dpkg-query -s  build-essential 1>/dev/null && gem spec bundler 1>/dev/null 2>&1 \
   && gem spec jekyll 1>/dev/null 2>&1;
 then
