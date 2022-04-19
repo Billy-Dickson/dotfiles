@@ -51,22 +51,23 @@ if hash neofetch 2>/dev/null; then
     done
 fi
 
+# Removing at the moment, I'll spin this off to anther githib download.
+#
 # Optionally uninstall Jekyll and Gems
 #
 # Check to see if ruby-full is installed, if it is give the option to removed
 # ruby and all the gems associated with Jekyll and Gems.
-if hash ruby-full 2>/dev/null;
-  printf "Ruby-Full installed and Jekyll"
-     while true; do
-	      read -p "Would you like to un-install Jekyll, Ruby-> and the gems" yn
-	      case $yn in
-           [Yy]* ) gem uninstall jekyll bundler; \
-           sudo apt -y remove ruby-full build-essential zlib1g-dev; \
-           printf "\nRuby, build essential and zliblg-dev removed\n\n"
-           printf "\nGems jekyll and bundler Installed\n\n"; break;;
-           [Nn]* ) exit;;
-          * ) echo "Please answer yes or no.";;
-        esac
-      done
-  fi
-fi
+#if hash ruby-full 2>/dev/null; then
+#  printf "Ruby-Full installed and Jekyll"
+#     while true; do
+#	      read -p "Would you like to un-install Jekyll, Ruby-> and the gems" yn
+#	      case $yn in
+#          [Yy]* ) gem uninstall jekyll bundler; \
+#           sudo apt -y remove ruby-full build-essential zlib1g-dev; \
+#           printf "\nRuby, build essential and zliblg-dev removed\n\n"
+#           printf "\nGems jekyll and bundler Installed\n\n"; break;;
+#           [Nn]* ) exit;;
+#          * ) echo "Please answer yes or no.";;
+#        esac
+#      done
+#fi

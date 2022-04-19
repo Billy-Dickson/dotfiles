@@ -71,6 +71,13 @@ else
     done
 fi
 
+
+# I'm going to spin this out to a seperate github repository for development
+# programs.
+#
+# This is slightly broken and will need fixed before using.
+# Billy Dickson 19/04/22
+#
 # Optionally install Jekyll if its missing
 #
 # Check to see if the applications have been installed and also check
@@ -78,22 +85,22 @@ fi
 # user If they would like to install the applications and the gems for
 # running jekyll
 #
-if dpkg-query -s zlib1g-dev 1>/dev/null && dpkg-query -s ruby-full 1>/dev/null \
-  && dpkg-query -s  build-essential 1>/dev/null && gem spec bundler 1>/dev/null 2>&1 \
-  && gem spec jekyll 1>/dev/null 2>&1;
-then
-  printf "Jekyll installed\n"
-else
-     while true; do
-	      read -p "Would you like to install Jekyll -> " yn
-	      case $yn in
-           [Yy]* ) sudo apt -y install ruby-full build-essential zlib1g-dev; \
-           printf "\nRuby, build essential and zliblg-dev Installed\n\n" \
-	         gem install jekyll bundler; \
-           printf "\nGems jekyll and bundler Installed\n\n"; break;;
-           [Nn]* ) exit;;
-          * ) echo "Please answer yes or no.";;
-        esac
-      done
-  fi
-fi
+#if dpkg-query -s zlib1g-dev 1>/dev/null && dpkg-query -s ruby-full 1>/dev/null \
+#  && dpkg-query -s  build-essential 1>/dev/null && gem spec bundler 1>/dev/null 2>&1 \
+#  && gem spec jekyll 1>/dev/null 2>&1;
+#then
+#  printf "Jekyll installed\n"
+#else
+#     while true; do
+#	      read -p "Would you like to install Jekyll -> " yn
+#	      case $yn in
+#           [Yy]* ) sudo apt -y install ruby-full build-essential zlib1g-dev; \
+#           printf "\nRuby, build essential and zliblg-dev Installed\n\n" \
+#	         gem install jekyll bundler; \
+#           printf "\nGems jekyll and bundler Installed\n\n"; break;;
+#           [Nn]* ) exit;;
+#          * ) echo "Please answer yes or no.";;
+#        esac
+#      done
+#  fi
+#fi
