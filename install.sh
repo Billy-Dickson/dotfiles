@@ -18,15 +18,16 @@
 #
 #
 if [ -L $HOME'/.bashrc' ]; then
-  printf "\nThe dotfiles have already been installed. Try running uninstall program first.\n\n"
-  printf "./uninstall.sh\n\n"
+    printf "\nThe dotfiles have already been installed. Try running uninstall program first.\n\n"
+    printf "./uninstall.sh\n\n"
 else
-for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
-  if [ -e ~/$file ]; then
+  for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
+    if [ -e ~/$file ]; then
       mv -f ~/$file{,.dtbak}
-  fi
-  ln -s $PWD/$file ~/$file
-done
+    fi
+    ln -s $PWD/$file ~/$file
+  done
+fi
 
 # Optionally install Vim if it's missing.
 if hash vim 2>/dev/null; then
@@ -71,7 +72,6 @@ else
     done
 fi
 
-
 # I'm going to spin this out to a seperate github repository for development
 # programs.
 #
@@ -103,4 +103,3 @@ fi
 #        esac
 #      done
 #  fi
-#fi
