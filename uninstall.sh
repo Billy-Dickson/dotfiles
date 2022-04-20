@@ -46,8 +46,8 @@ if dpkg -s neofetch >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall Neofetch -> " yn
         case $yn in
-            [Yy]* ) sudo apt -y install neofetch;
-            printf "Neofetch installed\n\n"; break;;
+            [Yy]* ) sudo apt -y remove neofetch;
+            printf "Neofetch Uninstalled\n\n"; break;;
             [Nn]* ) break;;
               * ) echo "Please answer yes or no.";;
         esac
