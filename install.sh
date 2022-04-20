@@ -29,9 +29,9 @@ else
   done
 fi
 
-echo "\n Updating package repository\n"
+printf "\nUpdating package repository\n\n"
 sudo apt update
-echo "\n Upgrading packages\n"
+printf "\nUpgrading packages\n\n"
 sudo apt upgrade
 
 # Optionally install Vim if it's missing.
@@ -43,7 +43,7 @@ else
         case $yn in
             [Yy]* ) sudo apt -y install vim vim-scripts;
             printf "vim and vim-scripts installed\n\n"; break;;
-            [Nn]* ) break;;
+            [Nn]* ) exit;;
             * ) echo "Please answer yes or no.";;
        esac
     done
@@ -56,7 +56,8 @@ else
     while true; do
     read -p "Would you like to install Tmux -> " yn
         case $yn in
-            [Yy]* ) sudo apt -y install tmux; printf "Tmux installed\n\n"; break;;
+            [Yy]* ) sudo apt -y install tmux;
+            printf "Tmux installed\n\n"; break;;
             [Nn]* ) exit;;
             * ) echo "Please answer yes or no.";;
         esac
@@ -70,9 +71,10 @@ else
     while true; do
       read -p "Would you like to install Neofetch -> " yn
       case $yn in
-        [Yy]* ) sudo apt -y install neofetch; printf "Neofetch installed\n\n"; break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+          [Yy]* ) sudo apt -y install neofetch;
+          printf "Neofetch installed\n\n"; break;;
+          [Nn]* ) exit;;
+          * ) echo "Please answer yes or no.";;
       esac
     done
 fi

@@ -31,27 +31,30 @@ fi
 
 if hash tmux 2>/dev/null; then
     while true; do
-        read -p "Would you like to uninstall tmux -> " yn
+    read -p "Would you like to uninstall tmux -> " yn
         case $yn in
-            [Yy]* ) sudo apt -y remove tmux; printf "tmux uninstalled\n\n"; break;;
-            [Nn]* ) exit;;
+            [Yy]* ) sudo apt -y remove tmux;
+            printf "tmux uninstalled\n\n"; break;;
+            [Nn]* ) break;;
+                * ) echo "Please answer yes or no.";;
         esac
     done
 fi
 
 # Optionally un-install Neofetch if it's missing.
-if hash neofetch 2>/dev/null; then
+if dpkg -s neofetch >/dev/null 2>&1; then
     while true; do
-      read -p "Would you like to install Neofetch -> " yn
-      case $yn in
-        [Yy]* ) sudo apt -y install neofetch; printf "Neofetch installed\n\n"; break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-      esac
+    read -p "Would you like to uninstall Neofetch -> " yn
+        case $yn in
+            [Yy]* ) sudo apt -y install neofetch;
+            printf "Neofetch installed\n\n"; break;;
+            [Nn]* ) break;;
+              * ) echo "Please answer yes or no.";;
+        esac
     done
 fi
 
-echo "\nRemoving unused packages\n"
+printf "\nRemoving unused packages\n"
 sudo apt autoremove
 
 # Removing at the moment, I'll spin this off to anther githib download.
