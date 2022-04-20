@@ -51,7 +51,7 @@ if hash neofetch 2>/dev/null; then
     done
 fi
 
-echo "/nRemoving unused packages/n"
+echo "\nRemoving unused packages\n"
 sudo apt autoremove
 
 # Removing at the moment, I'll spin this off to anther githib download.
