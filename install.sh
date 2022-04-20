@@ -29,6 +29,11 @@ else
   done
 fi
 
+echo "/n Updating package repository/n"
+sudo apt update
+echo "/n Upgrading packages/n"
+sudo apt upgrade
+
 # Optionally install Vim if it's missing.
 if hash vim 2>/dev/null; then
 	printf "Vim installed\n"
