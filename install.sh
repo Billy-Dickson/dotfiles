@@ -79,6 +79,19 @@ else
     done
 fi
 
+if dpkg -s htop >/dev/null 2>&1; then
+	printf "\htop installed\n"
+else
+    while true; do
+    read -p "Would you like to install htop -> " yn
+        case $yn in
+            [Yy]* ) sudo apt -y install htop;
+            printf "htop inslledn\n"; break;;
+            [Nn]* ) exit;;
+            * ) echo "Please answer yes or no.";;
+       esac
+    done
+fi
 
 # Check to see if a ruby gem is installed, if not then install.
 # https://serverfault.com/questions/391621/checking-if-a-ruby-gem-is-installed-from-bash-script
