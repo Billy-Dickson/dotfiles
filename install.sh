@@ -13,10 +13,7 @@
 # install program has already been run, suggest running uninstall.sh first
 # then quit.
 #
-# Check to see if a ruby gem is installed, if not then install.
-#  https://serverfault.com/questions/391621/checking-if-a-ruby-gem-is-installed-from-bash-script
-#
-#
+
 if [ -L $HOME'/.bashrc' ]; then
     printf "\nThe dotfiles have already been installed. Try running uninstall program first.\n\n"
     printf "./uninstall.sh\n\n"
@@ -79,8 +76,11 @@ else
     done
 fi
 
-# I'm going to spin this out to a seperate github repository for development
-# programs.
+
+# Check to see if a ruby gem is installed, if not then install.
+# https://serverfault.com/questions/391621/checking-if-a-ruby-gem-is-installed-from-bash-script
+#
+# I'm going to spin this out to a seperate file to install on this repository.
 #
 # This is slightly broken and will need fixed before using.
 # Billy Dickson 19/04/22
