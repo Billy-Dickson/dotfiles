@@ -34,7 +34,7 @@ sudo apt upgrade
 # Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
 # this ensures that it gives a more consise and reliable yes/no 0/1 answer.
 if dpkg -s vim >/dev/null 2>&1; then
-	printf "Vim installed\n"
+	printf "\nVim installed\n"
 else
     while true; do
     read -p "Would you like to install Vim -> " yn
