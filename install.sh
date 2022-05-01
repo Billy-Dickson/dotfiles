@@ -31,8 +31,9 @@ sudo apt update
 printf "\nUpgrading packages\n\n"
 sudo apt upgrade
 
-# Optionally install Vim if it's missing.
-if hash vim 2>/dev/null; then
+# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+if dpkg -s vim >/dev/null 2>&1; then
 	printf "Vim installed\n"
 else
     while true; do
@@ -46,8 +47,9 @@ else
     done
 fi
 
-# Optionally install Tmux if it's missing.
-if hash tmux 2>/dev/null; then
+# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+if dpkg -s tmux >/dev/null 2>&1; then
     printf "Tmux installed\n"
 else
     while true; do
@@ -61,8 +63,9 @@ else
     done
 fi
 
-# Optionally install Neofetch if it's missing.
-if hash neofetch 2>/dev/null; then
+# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+if dpkg -s neofatch >/dev/null 2>&1; then
   printf "Neofetch installed\n"
 else
     while true; do
