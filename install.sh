@@ -65,7 +65,7 @@ fi
 
 # Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
 # this ensures that it gives a more consise and reliable yes/no 0/1 answer.
-if dpkg -s neofatch >/dev/null 2>&1; then
+if dpkg -s neofetch >/dev/null 2>&1; then
   printf "Neofetch installed\n"
 else
     while true; do
