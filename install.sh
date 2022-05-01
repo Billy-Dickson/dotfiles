@@ -103,7 +103,7 @@ else
     while true; do
     read -p "Would you like to install whois -> " yn
         case $yn in
-            [Yy]* ) sudo apt -y install htop;
+            [Yy]* ) sudo apt -y install whois;
             printf "whois installedn\n"; break;;
             [Nn]* ) exit;;
             * ) echo "Please answer yes or no.";;
