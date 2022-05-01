@@ -53,7 +53,7 @@ if dpkg -s tmux >/dev/null 2>&1; then
     printf "Tmux installed\n"
 else
     while true; do
-    read -p "Would you like to install Tmux -> " yn
+    read -p "Would you like to install tmux -> " yn
         case $yn in
             [Yy]* ) sudo apt -y install tmux;
             printf "Tmux installed\n\n"; break;;
@@ -79,6 +79,8 @@ else
     done
 fi
 
+# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
 if dpkg -s htop >/dev/null 2>&1; then
 	printf "\htop installed\n"
 else
@@ -86,7 +88,23 @@ else
     read -p "Would you like to install htop -> " yn
         case $yn in
             [Yy]* ) sudo apt -y install htop;
-            printf "htop inslledn\n"; break;;
+            printf "htop installedn\n"; break;;
+            [Nn]* ) exit;;
+            * ) echo "Please answer yes or no.";;
+       esac
+    done
+fi
+
+# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+if dpkg -s whois >/dev/null 2>&1; then
+	printf "whois installed\n"
+else
+    while true; do
+    read -p "Would you like to install whois -> " yn
+        case $yn in
+            [Yy]* ) sudo apt -y install htop;
+            printf "whois installedn\n"; break;;
             [Nn]* ) exit;;
             * ) echo "Please answer yes or no.";;
        esac
@@ -98,7 +116,6 @@ fi
 #
 # I'm going to spin this out to a seperate file to install on this repository.
 #
-# This is slightly broken and will need fixed before using.
 # Billy Dickson 19/04/22
 #
 # Optionally install Jekyll if its missing

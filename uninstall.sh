@@ -73,6 +73,20 @@ if dpkg -s htop >/dev/null 2>&1; then
     done
 fi
 
+# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+if dpkg -s whois >/dev/null 2>&1; then
+    while true; do
+    read -p "Would you like to uninstall whois -> " yn
+        case $yn in
+            [Yy]* ) sudo apt -y remove whois;
+            printf "whois Uninstalled\n\n"; break;;
+            [Nn]* ) break;;
+              * ) echo "Please answer yes or no.";;
+        esac
+    done
+fi
+
 printf "\nRemoving unused packages\n\n"
 sudo apt autoremove
 
