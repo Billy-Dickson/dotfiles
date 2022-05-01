@@ -17,7 +17,9 @@ for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     fi
 done
 
-if hash vim 2>/dev/null; then
+# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+if dpkg -s vim >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall vim -> " yn
         case $yn in
@@ -29,7 +31,9 @@ if hash vim 2>/dev/null; then
     done
 fi
 
-if hash tmux 2>/dev/null; then
+# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+if dpkg -s tmux >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall tmux -> " yn
         case $yn in
@@ -54,10 +58,11 @@ if dpkg -s neofetch >/dev/null 2>&1; then
     done
 fi
 
-printf "\nRemoving unused packages\n"
+printf "\nRemoving unused packages\n\n"
 sudo apt autoremove
 
-# Removing at the moment, I'll spin this off to anther githib download.
+# Removing at the moment, I'll spin this off to a seperate uninstall file for
+# Jekyll and Gems
 #
 # Optionally uninstall Jekyll and Gems
 #
