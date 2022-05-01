@@ -104,7 +104,7 @@ else
     read -p "Would you like to install whois -> " yn
         case $yn in
             [Yy]* ) sudo apt -y install whois;
-            printf "whois installedn\n"; break;;
+            printf "whois installed\n\n"; break;;
             [Nn]* ) exit;;
             * ) echo "Please answer yes or no.";;
        esac
