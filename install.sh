@@ -12,7 +12,6 @@
 # Test to see if the symbolic link to .bashrc is there, if it is, then the
 # install program has already been run, suggest running uninstall.sh first
 # then quit.
-#
 
 if [ -L $HOME'/.bashrc' ]; then
     printf "\nThe dotfiles have already been installed. Try running uninstall program first.\n\n"

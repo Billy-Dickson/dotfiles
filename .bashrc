@@ -139,6 +139,14 @@ export HISTTIMEFORMAT='%m-%d %T ->  '
 # gems that might be needed later to support jekyll
 # B.Dickson 17/03/22
 # https://jekyllrb.com/docs/installation/ubuntu/
-
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
+
+# B.dickson 06/05/22
+# Adding to the path to allow for snap packages.
+export PATH="/snap/bin:$PATH"
+
+# B.Dickson 06/05/22
+# Added to support bash shell scripts in the bin directory of
+# the users home directory.
+export PATH="$HOME/bin:$PATH"
