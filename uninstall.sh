@@ -19,6 +19,20 @@ done
 
 # changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
 # this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+if dpkg -s net-tools >/dev/null 2>&1; then
+    while true; do
+    read -p "Would you like to uninstall Net-Tools -> " yn
+        case $yn in
+            [Yy]* ) sudo apt -y remove net-tools;
+            printf "Net-Tools uninstalled\n\n"; break;;
+            [Nn]* ) break;;
+                * ) echo "Please answer yes or no.";;
+        esac
+    done
+fi
+
+# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
 if dpkg -s vim >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall vim -> " yn
