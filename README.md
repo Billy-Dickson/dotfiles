@@ -24,8 +24,19 @@ It scratches an itch. :smile:
 You will need to install git first before downloading the dotfiles, to install git, type the following at the prompt.
 
 ```shell scripting
-sudo apt install git
+sudo apt install git sudo
 ```
+
+If your installing on a virgin install of debian, you'll have to setup sudo. To do this you will have to edit a file /etc/sudoes and add your username after the root username.
+
+```shell scripting
+su
+nano /etc/sudoers
+```
+
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+username  ALL=(ALL)  ALL
 
 ### Download and change folder
 ```shell scripting
