@@ -124,7 +124,9 @@ else
             * ) echo "Please answer yes or no.";;
        esac
     done
-fi# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
+fi
+
+# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
 # this ensures that it gives a more consise and reliable yes/no 0/1 answer.
 if dpkg -s whois >/dev/null 2>&1; then
 	printf "whois installed\n"
@@ -138,7 +140,8 @@ else
             * ) echo "Please answer yes or no.";;
        esac
     done
-fi# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
+fi
+
 
 # Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
 # this ensures that it gives a more consise and reliable yes/no 0/1 answer.
