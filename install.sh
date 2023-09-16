@@ -48,6 +48,22 @@ fi
 
 # Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
 # this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+if dpkg -s curl >/dev/null 2>&1; then
+	printf "\nCurl installed\n"
+else
+    while true; do
+    read -p "Would you like to install curl ->" yn
+        case $yn in
+            [Yy]* ) sudo apt -y install curl;
+            printf "Curl installed\n\n"; break;;
+            [Nn]* ) exit;;
+            * ) echo "Please answer yes or no.";;
+       esac
+    done
+fi
+
+# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
+# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
 if dpkg -s vim >/dev/null 2>&1; then
 	printf "\nVim installed\n"
 else
