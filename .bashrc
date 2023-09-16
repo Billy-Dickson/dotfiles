@@ -110,7 +110,6 @@ alias l='ls -CF'
 alias em='emacs -nw'
 alias dd='dd status=progress'
 alias _='sudo'
-alias batcat=bat
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
