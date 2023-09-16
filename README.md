@@ -35,7 +35,9 @@ nano /etc/sudoers
 ```
 
 User privilege specification
+
 root    ALL=(ALL:ALL) ALL
+
 username  ALL=(ALL)  ALL
 
 ### Download and change folder
