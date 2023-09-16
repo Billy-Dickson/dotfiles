@@ -112,39 +112,6 @@ fi
 
 # Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
 # this ensures that it gives a more consise and reliable yes/no 0/1 answer.
-if dpkg -s whois >/dev/null 2>&1; then
-	printf "whois installed\n"
-else
-    while true; do
-    read -p "Would you like to install whois -> " yn
-        case $yn in
-            [Yy]* ) sudo apt -y install whois;
-            printf "whois installed\n\n"; break;;
-            [Nn]* ) exit;;
-            * ) echo "Please answer yes or no.";;
-       esac
-    done
-fi
-
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
-if dpkg -s whois >/dev/null 2>&1; then
-	printf "whois installed\n"
-else
-    while true; do
-    read -p "Would you like to install whois -> " yn
-        case $yn in
-            [Yy]* ) sudo apt -y install whois;
-            printf "whois installed\n\n"; break;;
-            [Nn]* ) exit;;
-            * ) echo "Please answer yes or no.";;
-       esac
-    done
-fi
-
-
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
 if dpkg -s bat >/dev/null 2>&1; then
 	printf "bat installed\n"
 else
