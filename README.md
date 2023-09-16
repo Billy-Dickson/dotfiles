@@ -34,7 +34,6 @@ su
 nano /etc/sudoers
 ```
 
-User privilege specification  
 root    ALL=(ALL:ALL) ALL  
 username  ALL=(ALL)  ALL  
 
