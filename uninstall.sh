@@ -74,11 +74,11 @@ if dpkg -s htop >/dev/null 2>&1; then
 fi
 
 # this ensures that it gives a more consise and reliable yes/no 0/1 answer.
-if dpkg -s batcat >/dev/null 2>&1; then
+if dpkg -s bat >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall bat -> " yn
         case $yn in
-            [Yy]* ) sudo apt -y remove batcat;
+            [Yy]* ) sudo apt -y remove bat;
             printf "bat Uninstalled\n\n"; break;;
             [Nn]* ) break;;
               * ) echo "Please answer yes or no.";;
