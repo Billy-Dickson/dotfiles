@@ -19,7 +19,7 @@ It scratches an itch. :smile:
 
 ![Terminal Screenshot](assets/Screenshot-Ubuntu.png)
 
-![Terminal Screenshot](assets/Screenshot-Debian)
+![Terminal Screenshot](assets/Screenshot-Debian.png)
 ## Installation
 
 You will need to install git first before downloading the dotfiles, to install git, type the following at the prompt.
@@ -70,3 +70,6 @@ I usually enable autoupdate, and at some point I intend to automate the process 
 [Emoji Cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet#table-of-contents)  
 [A list of tmux plugins.](https://github.com/tmux-plugins/list)  
 [A list of programming languages known to github](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)   
+
+
+[def]: assets/Screenshot-Ubuntu.png
