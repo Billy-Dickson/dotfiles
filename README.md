@@ -17,8 +17,9 @@ It scratches an itch. :smile:
    - [Run uninstaller](#run-uninstaller)
  - [References and helpfull links](#references-and-helpfull-links)
 
-![Terminal Screenshot](assets/Screenshot.png)
+![Terminal Screenshot](assets/Screenshot-Ubuntu.png)
 
+![Terminal Screenshot](assets/Screenshot-Debian)
 ## Installation
 
 You will need to install git first before downloading the dotfiles, to install git, type the following at the prompt.
