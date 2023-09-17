@@ -59,6 +59,8 @@ cd ~/dotfiles
 ./uninstall.sh
 ```
 
+I usually enable autoupdate, and at some point I intend to automate the process of installing the package. For now here's manual [instructions](https://www.sebae.net/blog/how-to-configure-automatic-updates-on-debian/) on installing and setting up auto-update
+
 ## References and helpfull links
 [Tmux Cheat Sheet](https://tmuxcheatsheet.com/)  
 [Vim Cheat Sheet](https://devhints.io/vim)  
