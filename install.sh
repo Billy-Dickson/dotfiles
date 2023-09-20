@@ -30,8 +30,7 @@ sudo apt update
 printf "\nUpgrading packages\n\n"
 sudo apt upgrade
 
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+# Ask then if yes install net-tools
 if dpkg -s net-tools >/dev/null 2>&1; then
 	printf "\nNet-Tools installed\n"
 else
@@ -46,8 +45,7 @@ else
     done
 fi
 
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+# Ask then if yes install curl.
 if dpkg -s curl >/dev/null 2>&1; then
 	printf "\nCurl installed\n"
 else
@@ -62,8 +60,7 @@ else
     done
 fi
 
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+# Ask then if yes install vim and vim scripts
 if dpkg -s vim >/dev/null 2>&1; then
 	printf "\nVim installed\n"
 else
@@ -78,8 +75,7 @@ else
     done
 fi
 
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+# Ask then if yes install tmux
 if dpkg -s tmux >/dev/null 2>&1; then
     printf "Tmux installed\n"
 else
@@ -94,8 +90,7 @@ else
     done
 fi
 
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+# Ask then if yes install neofetch
 if dpkg -s neofetch >/dev/null 2>&1; then
   printf "Neofetch installed\n"
 else
@@ -110,8 +105,7 @@ else
     done
 fi
 
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+# Ask then if yes install htop
 if dpkg -s htop >/dev/null 2>&1; then
 	printf "htop installed\n"
 else
@@ -126,8 +120,7 @@ else
     done
 fi
 
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+# Ask then if yes install whois
 if dpkg -s whois >/dev/null 2>&1; then
 	printf "whois installed\n"
 else
@@ -142,8 +135,8 @@ else
     done
 fi
 
-# Changed to use dkpg instead of "hash <package_name> 2>/dev/null; then""
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+# Ask then if yes install bat, need to add a check for the arm (rasperry pi platform) before trying
+# to install as that package isn't in the repository.
 
 # I need to add a check as bat doesn't seem to be available for arm at the moment.
 
