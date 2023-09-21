@@ -47,7 +47,7 @@ fi
 
 # Ask then if yes install curl.
 if dpkg -s curl >/dev/null 2>&1; then
-	printf "\nCurl installed\n"
+	printf "Curl installed\n"
 else
     while true; do
     read -p "Would you like to install curl ->" yn
@@ -62,7 +62,7 @@ fi
 
 # Ask then if yes install vim and vim scripts
 if dpkg -s vim >/dev/null 2>&1; then
-	printf "\nVim installed\n"
+	printf "Vim installed\n"
 else
     while true; do
     read -p "Would you like to install Vim -> " yn
