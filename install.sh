@@ -135,6 +135,21 @@ else
     done
 fi
 
+if dpkg -s traceroute >/dev/null 2>&1; then
+        printf "traceroute installed\n"
+else
+    while true; do
+    read -p "Would you like to install traceroute -> " yn
+        case $yn in
+            [Yy]* ) sudo apt -y install traceroute;
+            printf "traceroute installed\n\n"; break;;
+            [Nn]* ) exit;;
+            * ) echo "Please answer yes or no.";;
+       esac
+    done
+fi
+
+
 # Ask then if yes install bat, need to add a check for the arm (rasperry pi platform) before trying
 # to install as that package isn't in the repository.
 

@@ -101,6 +101,30 @@ if dpkg -s htop >/dev/null 2>&1; then
     done
 fi
 
+if dpkg -s whois >/dev/null 2>&1; then
+    while true; do
+    read -p "Would you like to uninstall whois -> " yn
+        case $yn in
+            [Yy]* ) sudo apt -y remove whois;
+            printf "htop Uninstalled\n\n"; break;;
+            [Nn]* ) break;;
+              * ) echo "Please answer yes or no.";;
+        esac
+    done
+fi
+
+if dpkg -s traceroute >/dev/null 2>&1; then
+    while true; do
+    read -p "Would you like to uninstall traceroute -> " yn
+        case $yn in
+            [Yy]* ) sudo apt -y remove traceroute;
+            printf "htop Uninstalled\n\n"; break;;
+            [Nn]* ) break;;
+              * ) echo "Please answer yes or no.";;
+        esac
+    done
+fi
+
 # this ensures that it gives a more consise and reliable yes/no 0/1 answer.
 if dpkg -s bat >/dev/null 2>&1; then
     while true; do
