@@ -24,43 +24,47 @@ It scratches an itch. :smile:
 
 You will need to install git first before downloading the dotfiles, to install git, type the following at the prompt.
 
-```shell scripting
+```bash
 sudo apt install git sudo
 ```
 
 If your installing on a virgin install of debian, you'll have to setup sudo. To do this you will have to edit a file /etc/sudoes and add your username after the root username.
 
-```shell scripting
+```bash
 su
 nano /etc/sudoers
 ```
 
 Add the following, swap username for the login name of the person, that you want to be in the sudo group
 
-```shell scripting
+```bash
 root    ALL=(ALL:ALL) ALL  
 username  ALL=(ALL)  ALL
 ```
 
 ### Download and change folder
-```shell scripting
+
+```bash
 cd ~
 git clone https://github.com/Billy-Dickson/dotfiles.git
 cd dotfiles
 ```
+
 ### Run installer
-```shell scripting
+
+```bash
 ./install.sh
 ```
 ## Removal
 
 ### Change to dotfiles folder
-```shell scripting
+```bash
 cd ~/dotfiles
 ```
 
 ### Run uninstaller
-```shell scripting
+
+```bash
 ./uninstall.sh
 ```
 
