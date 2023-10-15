@@ -35,8 +35,12 @@ su
 nano /etc/sudoers
 ```
 
+Add the following, swap username for the login name of the person, that you want to be in the sudo group
+
+```shell scripting
 root    ALL=(ALL:ALL) ALL  
-username  ALL=(ALL)  ALL  
+username  ALL=(ALL)  ALL
+```
 
 ### Download and change folder
 ```shell scripting
