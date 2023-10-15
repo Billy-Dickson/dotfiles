@@ -17,8 +17,7 @@ for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     fi
 done
 
-# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+
 if dpkg -s net-tools >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall Net-Tools -> " yn
@@ -31,8 +30,7 @@ if dpkg -s net-tools >/dev/null 2>&1; then
     done
 fi
 
-# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+
 if dpkg -s curl >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall curl -> " yn
@@ -45,8 +43,7 @@ if dpkg -s curl >/dev/null 2>&1; then
     done
 fi
 
-# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+
 if dpkg -s vim >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall vim -> " yn
@@ -59,8 +56,7 @@ if dpkg -s vim >/dev/null 2>&1; then
     done
 fi
 
-# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+
 if dpkg -s tmux >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall tmux -> " yn
@@ -73,8 +69,7 @@ if dpkg -s tmux >/dev/null 2>&1; then
     done
 fi
 
-# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+
 if dpkg -s neofetch >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall Neofetch -> " yn
@@ -87,8 +82,7 @@ if dpkg -s neofetch >/dev/null 2>&1; then
     done
 fi
 
-# changed to use dkpg instead of hash <package_name> 2>/dev/null; Then
-# this ensures that it gives a more consise and reliable yes/no 0/1 answer.
+
 if dpkg -s htop >/dev/null 2>&1; then
     while true; do
     read -p "Would you like to uninstall htop -> " yn

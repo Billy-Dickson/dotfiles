@@ -19,7 +19,8 @@ It scratches an itch. :smile:
 
 ![Terminal Screenshot](/assets/Screenshot-Ubuntu-New.png)
 
-![Terminal Screenshot](assets/Screenshot-Debian.png)
+![Terminal Screenshot](/assets/Screenshot-Debian-New.png)
+
 ## Installation
 
 You will need to install git first before downloading the dotfiles, to install git, type the following at the prompt.
