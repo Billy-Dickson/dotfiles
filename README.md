@@ -17,7 +17,7 @@ It scratches an itch. :smile:
    - [Run uninstaller](#run-uninstaller)
  - [References and helpfull links](#references-and-helpfull-links)
 
-![Terminal Screenshot](assets/Screenshot-Ubuntu.png)
+![Terminal Screenshot](/assets/Screenshot-Ubuntu-New.png)
 
 ![Terminal Screenshot](assets/Screenshot-Debian.png)
 ## Installation
