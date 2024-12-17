@@ -168,3 +168,17 @@ else
        esac
     done
 fi
+
+if dpkg -s cmatrix >/dev/null 2>&1; then
+    printf "cmatrix terminal screen saver installed\n"
+else   
+    while true; do
+    read -p "Would you like to install cmatrix terminal screen saver -> " yn
+        case $yn in
+            [Yy]* ) sudo apt -y install cmatrix;
+            printf "cmatrix installed\n\n"; break;;
+            [Nn]* ) exit;;
+            * ) echo "Please answer yes or no.";;
+        esac
+    done
+fi
