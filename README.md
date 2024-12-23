@@ -1,4 +1,4 @@
-## Preamble
+# Preamble
 
 I've recently installed  [Pop! OS](https://pop.system76.com) on my new laptops and I've been slowly re-learning [bash scripting](https://ryanstutorials.net/bash-scripting-tutorial/). I started programming at school about 35 years ago and later, while I was at University.
 
@@ -9,15 +9,14 @@ It scratches an itch. :smile:
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Table of Contents
- - [Installation](#installation)
-   - [Download and change folder](#download-and-change-folder)
-   - [Run installer](#run-installer)
- - [Removal](#removal)
-   - [Change to dotfiles folder](#change-to-dotfiles-folder)
-   - [Run uninstaller](#run-uninstaller)
- - [References and helpfull links](#references-and-helpfull-links)
 
-![Terminal Screenshot](/assets/Screenshot-Ubuntu-New.png)
+1. [Installation](#installation)
+2. [Download and change folder](#download-and-change-folder)
+3. [Run installer](#run-installer)
+4. [Removal](#removal)
+5. [Change to dotfiles folder](#change-to-dotfiles-folder)
+6. [Run uninstaller](#run-uninstaller)
+7. [References and helpfull links](#references-and-helpfull-links)
 
 ![Terminal Screenshot](/assets/Screenshot-Debian-New.png)
 
@@ -56,9 +55,11 @@ cd dotfiles
 ```bash
 ./install.sh
 ```
+
 ## Removal
 
 ### Change to dotfiles folder
+
 ```bash
 cd ~/dotfiles
 ```
@@ -72,13 +73,13 @@ cd ~/dotfiles
 I usually enable autoupdate, and at some point I intend to automate the process of installing the package. For now here's manual [instructions](https://www.sebae.net/blog/how-to-configure-automatic-updates-on-debian/) on installing and setting up auto-update
 
 ## References and helpfull links
-[Tmux Cheat Sheet](https://tmuxcheatsheet.com/)  
-[Vim Cheat Sheet](https://devhints.io/vim)  
-[Bash scripting Cheat sheet](https://devhints.io/bash)  
-[Bash handbook](https://github.com/denysdovhan/bash-handbook)  
-[Emoji Cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet#table-of-contents)  
-[A list of tmux plugins.](https://github.com/tmux-plugins/list)  
-[A list of programming languages known to github](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)   
 
+- [Tmux Cheat Sheet](https://tmuxcheatsheet.com/)  
+- [Vim Cheat Sheet](https://devhints.io/vim)  
+- [Bash scripting Cheat sheet](https://devhints.io/bash)  
+- [Bash handbook](https://github.com/denysdovhan/bash-handbook)  
+- [Emoji Cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet#table-of-contents)  
+- [A list of tmux plugins.](https://github.com/tmux-plugins/list)  
+- [A list of programming languages known to github](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
 
-[def]: assets/Screenshot-Ubuntu.png
+![Ubuntu Screenshot](assets/Screenshot-Ubuntu.png)
