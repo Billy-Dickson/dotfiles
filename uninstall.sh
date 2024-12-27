@@ -125,7 +125,10 @@ if dpkg -s bat >/dev/null 2>&1; then
     read -p "Would you like to uninstall bat -> " yn
         case $yn in
             [Yy]* ) sudo apt -y remove bat;
-            printf "bat Uninstalled\n\n"; break;;
+            # Remove the cat alias from .bash_aliases
+            sed -i '/batcat/d' .bash_aliases;
+            printf "\n\n";
+            printf "bat uninstalled\n\n"; break;;
             [Nn]* ) break;;
               * ) echo "Please answer yes or no.";;
         esac
