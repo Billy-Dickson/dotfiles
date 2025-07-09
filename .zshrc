@@ -58,7 +58,7 @@ setopt hist_verify            # show command with history expansion to user befo
 
 # force zsh to show the complete history
 alias history="history 0"
-alias bat="batcat"
+
 # configure `time` format
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S\ncpu\t%P'
 
@@ -217,15 +217,18 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     export LS_COLORS="$LS_COLORS:ow=30;44:" # fix ls color for folders with 777 permissions
 
+
+    # https://linuxhandbook.com/zsh-aliases/
+    #
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
-
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
     alias diff='diff --color=auto'
     alias ip='ip --color=auto'
+    alias bat='batcat'
 
     export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
     export LESS_TERMCAP_md=$'\E[1;36m'     # begin bold
