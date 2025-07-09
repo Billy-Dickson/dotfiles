@@ -58,7 +58,7 @@ setopt hist_verify            # show command with history expansion to user befo
 
 # force zsh to show the complete history
 alias history="history 0"
-
+alias bat="batcat"
 # configure `time` format
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S\ncpu\t%P'
 
