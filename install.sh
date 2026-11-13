@@ -179,6 +179,7 @@ while true; do
     read -p "Would you like to install ZSH and Extras -> " yn
         case $yn in
             [Yy]* ) sudo apt -y install vim-scripts zsh zsh-syntax-highlighting zsh-autosuggestions;
+			copy .zshrc ..
             printf "ZSH and Extras installed\n\n"; break;;
             [Nn]* ) exit;;
             * ) echo "Please answer yes or no.";;
